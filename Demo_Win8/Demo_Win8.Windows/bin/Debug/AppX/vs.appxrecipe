@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MUNCHABUNCH</Machine>
+    <WindowsUser>Mike</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>889cfa3b-fac4-4468-ab8c-99b917e07f53</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>254FE134AB503EFA9995570FC66B8DFF0581A6EAABE14A042A3BFDC0FC762D5A</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>889cfa3b-fac4-4468-ab8c-99b917e07f53_1.0.0.0_neutral__dg3rhm3j3sdc0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>889cfa3b-fac4-4468-ab8c-99b917e07f53_dg3rhm3j3sdc0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>889cfa3b-fac4-4468-ab8c-99b917e07f53</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Mike</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-11-13T20:18:23.199</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\Demo_Win8.Windows.exe">
+      <PackagePath>Demo_Win8.Windows.exe</PackagePath>
+      <Modified>2015-11-22T21:33:58.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T02:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T02:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T02:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T02:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\i\cat.jpeg">
+      <PackagePath>i\cat.jpeg</PackagePath>
+      <Modified>2015-01-19T23:12:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\i\field.jpeg">
+      <PackagePath>i\field.jpeg</PackagePath>
+      <Modified>2015-06-12T18:57:36.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\i\palmettos.jpeg">
+      <PackagePath>i\palmettos.jpeg</PackagePath>
+      <Modified>2015-01-19T23:12:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\Demo_Win8.Windows.xr.xml">
+      <PackagePath>Demo_Win8.Windows.xr.xml</PackagePath>
+      <Modified>2015-11-22T21:31:47.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-11-10T21:27:44.734</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-11-22T21:33:58.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-11-13T20:18:22.371</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

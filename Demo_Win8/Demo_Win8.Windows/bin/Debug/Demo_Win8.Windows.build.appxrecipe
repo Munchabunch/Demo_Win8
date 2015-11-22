@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MUNCHABUNCH</Machine>
+    <WindowsUser>Mike</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>889cfa3b-fac4-4468-ab8c-99b917e07f53</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\Demo_Win8.Windows.exe">
+      <PackagePath>Demo_Win8.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\i\cat.jpeg">
+      <PackagePath>i\cat.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\i\field.jpeg">
+      <PackagePath>i\field.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\i\palmettos.jpeg">
+      <PackagePath>i\palmettos.jpeg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\Demo_Win8.Windows.xr.xml">
+      <PackagePath>Demo_Win8.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

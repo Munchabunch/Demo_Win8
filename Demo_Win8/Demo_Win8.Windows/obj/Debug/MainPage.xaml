@@ -1,0 +1,269 @@
+﻿<Page x:Class="Demo_Win8.MainPage"
+      FontFamily="Segoe UI"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:Demo_Win8"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+            <RadioButton x:ConnectionId='10' Name="rb_Intro"
+                         Content="Intro"
+                         Margin="5"
+                         IsChecked="True"
+                         Tag="0"
+                                                  
+                         />
+            <RadioButton x:ConnectionId='11' Name="rb_Pictures"
+                         Content="Pictures"
+                         Margin="5"
+                         IsChecked="False"
+                         Tag="1"
+                                                  
+                         />
+            <RadioButton x:ConnectionId='12' Name="rb_StackPanel"
+                         Content="StackPanel"
+                         Margin="5"
+                         IsChecked="False"
+                         Tag="2"
+                                                  
+                         />
+            <RadioButton x:ConnectionId='13' Name="rb_Grid"
+                         Content="Grid"
+                         Margin="5"
+                         IsChecked="False"
+                         Tag="3"
+                                                  
+                         />
+            <RadioButton x:ConnectionId='14' Name="rb_Canvas"
+                         Content="Canvas"
+                         Margin="5"
+                         IsChecked="False"
+                         Tag="4"
+                                                  
+                         />
+            <RadioButton x:ConnectionId='15' Name="rb_Text"
+                         Content="Text"
+                         Margin="5"
+                         IsChecked="False"
+                         Tag="5"
+                                                  
+                         />
+        </StackPanel>
+
+        <FlipView x:ConnectionId='1' Name="oFlipView_01"
+                  Grid.Row="2" Grid.Column="1"
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                                                  
+                  >
+            <FlipViewItem Margin="20">
+                <Grid>
+                    <TextBlock FontSize="18"
+                           FontStyle="Italic"
+                           HorizontalAlignment="Left"  VerticalAlignment="Top"
+                           Margin="10,10,0,0"
+                           >
+                        This program demonstrates a variety of Windows 8 Store display features and techniques.
+                    </TextBlock>
+                    <TextBlock FontSize="12"
+                           HorizontalAlignment="Left"  VerticalAlignment="Top"
+                           Margin="10,60,0,0"
+                           TextWrapping="Wrap"
+                           >
+                    The features and techniques include various types of panels such as the StackPanel, the DockPanel, the WrapPanel, and the Canvas. Also demonstrated are regular grids and the UniformGrid. Another tab shows how to make user-resizable grids.
+                    </TextBlock>
+                </Grid>
+            </FlipViewItem>
+            <FlipViewItem Margin="20">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="22" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="1" /><!-- TEMP -->
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1" Grid.Row="0"
+                           Margin="10"
+                           HorizontalAlignment="Left" VerticalAlignment="Top">
+                    Image
+                    </TextBlock>
+                    <TextBlock Grid.Row="0" Grid.Column="2"
+                           Margin="10"
+                           HorizontalAlignment="Left" VerticalAlignment="Top">
+                    MediaElement
+                    </TextBlock>
+                    <Image Name="img_01"
+                           Grid.Row="1" Grid.Column="1"
+                           Height="200" Width="200" Margin="10"
+                           HorizontalAlignment="Left" Stretch="Uniform"
+                           Source=".\i\field.jpeg"
+                           />
+                    <StackPanel Grid.Row="3" Grid.Column="1"
+                                Orientation="Horizontal">
+                        <Button x:ConnectionId='7' Name="btn_ImgA" Height="50" Width="60" Margin="4"                       >A</Button>
+                        <Button x:ConnectionId='8' Name="btn_ImgB" Height="50" Width="60" Margin="4"                       >B</Button>
+                        <Button x:ConnectionId='9' Name="btn_ImgC" Height="50" Width="60" Margin="4"                       >C</Button>
+                    </StackPanel>
+                    <MediaElement Name="oMediaElement_01"
+                              Grid.Row="1" Grid.Column="2"
+                              Height="200" Width="200" Margin="10"
+                              Source="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg"
+                              />
+                    <StackPanel Grid.Row="2" Grid.Column="2"
+                            Orientation="Horizontal">
+                        <Button x:ConnectionId='5' Name="btn_Pause" Padding="4" Margin="4"                        >Pause</Button>
+                        <Button x:ConnectionId='6' Name="btn_Play" Padding="4" Margin="4"                       >Play</Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Grid.Column="2"
+                            Orientation="Horizontal">
+                        <Button x:ConnectionId='2' Name="btn_01" Height="30" Width="30" Margin="4"                     >01</Button>
+                        <Button x:ConnectionId='3' Name="btn_02" Height="30" Width="30" Margin="4"                     >02</Button>
+                        <Button x:ConnectionId='4' Name="btn_03" Height="30" Width="30" Margin="4"                     >03</Button>
+                    </StackPanel>
+                </Grid>
+            </FlipViewItem>
+            <FlipViewItem Margin="20">
+                <ScrollViewer>
+                    <StackPanel Name="oStackPanel_Demo">
+                        <TextBlock Margin="10">StackPanel inside a ScrollViewer:<LineBreak />
+                            What do you want on your hamburger?</TextBlock>
+                        <ToggleButton Padding="4" Margin="4">
+                            Ketchup
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Mustard
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Pickles
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Onions
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Corn chips
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Jalapeños
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Popcorn
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Cheese
+                        </ToggleButton>
+                        <ToggleButton Padding="4" Margin="4">
+                            Lettuce
+                        </ToggleButton>
+                        <TextBlock Margin="10">Horizontal StackPanel inside a StackPanel:</TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Padding="4" Margin="4">· 1 ·</Button>
+                            <Button Padding="4" Margin="4">· 2 ·</Button>
+                            <Button Padding="4" Margin="4">· 3 ·</Button>
+                            <Button Padding="4" Margin="4">· 4 ·</Button>
+                            <Button Padding="4" Margin="4">· 5 ·</Button>
+                            <Button Padding="4" Margin="4">· 6 ·</Button>
+                            <Button Padding="4" Margin="4">· 7 ·</Button>
+                            <Button Padding="4" Margin="4">· 8 ·</Button>
+                            <Button Padding="4" Margin="4">· 9 ·</Button>
+                            <Button Padding="4" Margin="4">· 10 ·</Button>
+                            <Button Padding="4" Margin="4">· 11 ·</Button>
+                            <Button Padding="4" Margin="4">· 12 ·</Button>
+                            <Button Padding="4" Margin="4">· 13 ·</Button>
+                            <Button Padding="4" Margin="4">· 14 ·</Button>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </FlipViewItem>
+            <FlipViewItem Margin="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="3">This page demonstrates the XAML grid.</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="1" Margin="3">Column 0, Row 1</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="2" Margin="3">Column 0, Row 2</TextBlock>
+                    <TextBlock Grid.Column="1" Grid.Row="1" Margin="3">Column 1, Row 1</TextBlock>
+                    <TextBlock Grid.Column="1" Grid.Row="2" Margin="3">Column 1, Row 2</TextBlock>
+                    <Button Content="Send"
+                            Grid.Column="1" Grid.Row="3"
+                            Height="40"
+                            Margin="3"
+                            />
+                    <TextBlock Grid.Column="2" Grid.Row="2" Margin="3">Column 2, Row 2</TextBlock>
+                </Grid>
+            </FlipViewItem>
+            <FlipViewItem Margin="20">
+                <Canvas>
+                    <Ellipse Fill="Green"
+                         Width="80" Height="80" Canvas.Left="30" Canvas.Top="20"    
+                         Canvas.ZIndex="1"
+                         />
+                    <Ellipse Fill="Blue"
+                         Width="100" Height="100" Canvas.Left="60" Canvas.Top="40"
+                         />
+                    <Rectangle Fill="DarkMagenta" Height="49" Canvas.Left="86" Stroke="Black" Canvas.Top="65" Width="100" />
+                    <Rectangle Fill="Black" Height="2" Canvas.Left="200" Stroke="Black" Canvas.Top="65" Width="200" />
+                    <Button x:Name="button" Content="Button" Canvas.Left="85" Canvas.Top="163" />
+                    <TextBlock x:Name="textBlock" Canvas.Left="200" TextWrapping="Wrap" Canvas.Top="92" Height="91" Width="200">
+                        The Canvas is the most basic layout panel. Its child elements are positioned by explicit coordinates.
+                    </TextBlock>
+                </Canvas>
+            </FlipViewItem>
+            <FlipViewItem Margin="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="8">This page demonstrates XAML TextBlocks and TextBoxes.</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="1" Margin="8" Width="300" Height="80" TextWrapping="NoWrap">TextBlock with long text inside and TextWrapping set to "NoWrap"</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="2" Margin="8" Width="300" Height="120" TextWrapping="Wrap">TextBlock with long text inside and TextWrapping set to "Wrap"</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="3" Margin="8" Width="300" Height="120" TextWrapping="WrapWholeWords">TextBlock with long text inside and TextWrapping set to "WrapWholeWords"</TextBlock>
+                    <TextBox Grid.Column="1" Grid.Row="1" Margin="8" Width="300" Height="80" TextWrapping="NoWrap" Text="TextBlock with long text inside and TextWrapping set to ''NoWrap''" />
+                    <TextBox Grid.Column="1" Grid.Row="2" Margin="8" Width="300" Height="120" TextWrapping="Wrap" Text="TextBlock with long text inside and TextWrapping set to ''Wrap''" />
+                    <TextBox Grid.Column="2" Grid.Row="1" Margin="8" Width="300" Height="80" TextWrapping="NoWrap" AcceptsReturn="True" Text="TextBlock TextWrapping is ''NoWrap'', AcceptsReturn is True" />
+                    <TextBox Grid.Column="2" Grid.Row="2" Margin="8" Width="300" Height="120" TextWrapping="Wrap" AcceptsReturn="True" Text="TextBlock TextWrapping is ''Wrap'', AcceptsReturn is True" />
+                </Grid>
+            </FlipViewItem>
+        </FlipView>
+    </Grid>
+</Page>
+
