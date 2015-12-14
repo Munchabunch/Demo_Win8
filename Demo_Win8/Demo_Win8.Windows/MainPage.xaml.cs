@@ -5,6 +5,9 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.Pickers;
+using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -81,10 +84,29 @@ namespace Demo_Win8
         {
             ChangeImgSource(img_01, "i/palmettos.jpeg");
         }
-        private void btn_01_Click(object sender, RoutedEventArgs e)
+        private async void btn_01_Click(object sender, RoutedEventArgs e)
         {
-            oMediaElement_01.Source = new Uri(@".\video\breakaway.mpeg", UriKind.Relative);
-            oMediaElement_01.Play();
+            // WORKING //
+
+            FileOpenPicker fileOpenPicker = new FileOpenPicker();
+
+            // Filter to include a sample subset of file types
+            fileOpenPicker.FileTypeFilter.Add(".wmv");
+            fileOpenPicker.FileTypeFilter.Add(".mp4");
+            fileOpenPicker.FileTypeFilter.Add(".mp3");
+            fileOpenPicker.FileTypeFilter.Add(".wma");
+            fileOpenPicker.SuggestedStartLocation = PickerLocationId.VideosLibrary;
+
+            // Prompt user to select a file            
+            StorageFile file = await fileOpenPicker.PickSingleFileAsync();
+
+            // Ensure a file was selected
+            if (file != null)
+            {
+                // Open the selected file and set it as the MediaElement's source
+                IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read);
+                oMediaElement_01.SetSource(stream, file.ContentType);
+            }
         }
         private void btn_02_Click(object sender, RoutedEventArgs e)
         {
@@ -120,8 +142,6 @@ namespace Demo_Win8
         /// <param name="PathedFileName_NewImg">absolute or relative path and file name of the new image</param>
         private void ChangeImgSource(Image img_ToChange, string PathedFileName_NewImg)
         {
-            // WORKING //
-
             img_ToChange.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri("ms-appx:///" + PathedFileName_NewImg, UriKind.Absolute));
         }
 

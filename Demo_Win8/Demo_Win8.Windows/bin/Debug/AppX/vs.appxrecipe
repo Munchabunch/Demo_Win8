@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\Demo_Win8.Windows.exe">
       <PackagePath>Demo_Win8.Windows.exe</PackagePath>
-      <Modified>2015-11-22T21:33:58.857</Modified>
+      <Modified>2015-11-23T21:46:03.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-11-22T21:33:58.703</Modified>
+      <Modified>2015-11-23T21:41:16.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mike\PD\Demo_Win8\Demo_Win8\Demo_Win8.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

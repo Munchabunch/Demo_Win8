@@ -93,7 +93,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="22" />
                         <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="1" /><!-- TEMP -->
+                        <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
@@ -104,14 +104,14 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <TextBlock Grid.Column="1" Grid.Row="0"
-                           Margin="10"
-                           HorizontalAlignment="Left" VerticalAlignment="Top">
-                    Image
+                               Margin="10"
+                               HorizontalAlignment="Left" VerticalAlignment="Top">
+                        Image
                     </TextBlock>
                     <TextBlock Grid.Row="0" Grid.Column="2"
-                           Margin="10"
-                           HorizontalAlignment="Left" VerticalAlignment="Top">
-                    MediaElement
+                               Margin="10"
+                               HorizontalAlignment="Left" VerticalAlignment="Top">
+                        MediaElement
                     </TextBlock>
                     <Image Name="img_01"
                            Grid.Row="1" Grid.Column="1"
